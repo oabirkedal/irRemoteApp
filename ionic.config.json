@@ -1,0 +1,7 @@
+{
+  "name": "irRemote",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
