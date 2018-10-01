@@ -8,7 +8,9 @@ This is a proof-of-concept, rather than a product to bring to market. It was cre
 
 ## Images of App Pages
 
-<img align="left" width="100" height="100" src="images/learnIRCode.jpg">
+<p>
+  <img align="left" width="100" height="150" src="images/learnIRCode.jpg">
+</p>
 
 
 ## Getting Started
