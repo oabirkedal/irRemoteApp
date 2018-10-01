@@ -52,4 +52,4 @@ To utilize all features of the app, connect to an nRF52 peripheral (see the irRe
 - Ole Andreas Birkedal
 
 ## Acknowledgements
-- Thank you to Don Coleman for writing the Ionic BLE Peripheral plugin and for providing examples on how to use it. I relied especially on his Connect example. See: https://github.com/don/ionic-ble-examples
+- Thank you to Don Coleman for writing the Ionic BLE Peripheral plugin and for providing examples. I relied especially on his Connect example. See: https://github.com/don/ionic-ble-examples
