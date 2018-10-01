@@ -2,20 +2,27 @@
 
 The irRemote project replaces a TV remote.
 
+
 It consists of an Ionic app and a nRF52832 peripheral. The peripheral learns infrared (IR) signals from the user's TV remote. The app controls the peripheral over Bluetooth Low Energy (BLE), including when to learn and when to send IR signals.
+
 
 This is a proof-of-concept, rather than a product to bring to market. It was created as a coding example for LaunchCode.
 
 ## Images of App Pages
 
 <p>
-  <img align="left" width="100" height="150" src="images/learnIRCode.jpg">
+  <img width="150" height="275" src="images/learnIRCode.jpg">
+  <img width="150" height="275" src="images/scan.jpg">
+  <img width="150" height="275" src="images/confirm.jpg">
+  <img width="150" height="275" src="images/sideMenu.jpg">
+  <img width="150" height="275" src="images/aboutPage.jpg">
 </p>
 
 
 ## Getting Started
 
 These instructions will help you test the app on an iOS or Android device.
+
 
 ### Prerequisites
 
@@ -25,15 +32,16 @@ Download the Ionic DevApp to your iOS or Android device: https://ionicframework.
 
 Pull this repository to your computer.
 
+
 ### Running the App
 
-To run the app on your device, make sure that your computer and device are connected to the same network. In your computer terminal, cd into the folder containing the irRemoteApp repository.
+To run the app on your device, make sure that your computer and device are connected to the same network. In your computer terminal, cd into the irRemoteApp folder.
 
 Run command:
 
-'''
+```
 ionic serve -c
-'''
+```
 
 On your device, open DevApp and the irRemoteApp should appear.
 
