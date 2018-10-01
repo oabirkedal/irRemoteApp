@@ -12,9 +12,9 @@ This is a proof-of-concept, rather than a product to bring to market. It was cre
 
 <p>
   <img width="150" height="275" src="images/learnIRCode.jpg">
-  <img width="150" height="275" src="images/scan.jpg">
   <img width="150" height="275" src="images/confirm.jpg">
   <img width="150" height="275" src="images/sideMenu.jpg">
+  <img width="150" height="275" src="images/scan.jpg">
   <img width="150" height="275" src="images/aboutPage.jpg">
 </p>
 
