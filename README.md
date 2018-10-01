@@ -8,7 +8,7 @@ This is a proof-of-concept, rather than a product to bring to market. It was cre
 
 ## Images of App Pages
 
-![alt text](https://github.com/oabirkedal/irRemoteApp/images/learnIRCode.jpg)
+[Home Page](https://github.com/oabirkedal/irRemoteApp/images/learnIRCode.jpg)
 
 
 ## Getting Started
