@@ -1,3 +1,42 @@
 page-home {
 
+  .background-image-galaxy {
+    background-image: url(../assets/img/stars.jpg);
+    background-size: cover;
+  }
+
+  /*** POSITIONING ***/
+
+  //Power button
+  .bottom-fourth {
+      position: fixed;
+      left: 0;
+      bottom: 25%;
+      right: 0;
+  }
+
+  //Toggled message
+  .bottom-third {
+      position: fixed;
+      left: 0;
+      bottom: 18%;
+      right: 0;
+  }
+
+  //Volume buttons
+  .bottom-second {
+      position: fixed;
+      left: 0;
+      bottom: 10%;
+      right: 0;
+  }
+
+  //Edit mode
+  .bottom {
+      position: fixed;
+      left: 0;
+      bottom: 2%;
+      right: 0;
+  }
+
 }

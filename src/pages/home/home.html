@@ -1,18 +1,52 @@
-<ion-header>
-  <ion-navbar>
+
+<ion-header no-border padding>
+  <ion-navbar transparent>
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon name="md-menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content padding fullscreen class="background-image-galaxy white">
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <div padding text-center class="top-text">
+    <h1 padding class="large-text-size outline">irRemote</h1>
+    <button ion-button padding [style.backgroundColor]="button.findRemoteButton.color" (click)='openScanModal(this.button.findRemoteButton.state)'>
+      Find remote<ion-icon name="md-bluetooth"></ion-icon>
+    </button>
+  </div>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+
+  <div class="bottom-fourth" text-center padding>
+    <button ion-button [style.backgroundColor]="button.powerButton.color" text-center round (click)="buttonClicked(button.powerButton)">
+      Power<ion-icon name="md-power"></ion-icon>
+    </button>
+  </div>
+
+
+  <div text-center padding class="bottom-third">
+    <p *ngIf="waitingForRemote">
+      Waiting for signal from TV remote
+    </p>
+  </div>
+
+
+  <div class="bottom-second" text-center padding>
+    <button ion-button [style.backgroundColor]="button.upButton.color" text-center (click)="buttonClicked(button.upButton)">
+      Volume <ion-icon name="md-arrow-up"></ion-icon>
+    </button>
+    <button ion-button [style.backgroundColor]="button.downButton.color" secondary text-center (click)="buttonClicked(button.downButton)">
+      Volume <ion-icon name="md-arrow-down"></ion-icon>
+    </button>
+  </div>
+
+  <div class="bottom underline" text-center>
+    <p *ngIf="!button.editMode" (click)="editButtons()">
+      Edit Buttons
+    </p>
+    <p *ngIf="button.editMode" (click)="editButtons()">
+      Finish
+    </p>
+  </div>
+
 </ion-content>

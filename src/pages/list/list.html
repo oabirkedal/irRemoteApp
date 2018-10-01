@@ -1,23 +1,62 @@
-<ion-header>
-  <ion-navbar>
+<ion-header no-border padding>
+  <ion-navbar transparent>
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon name="md-menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
+<ion-content padding fullscreen text-center class="dark-clear-background white">
+
+  <div padding text-center class="top-text white">
+    <h1 padding class="large-text-size danger outline">About</h1>
   </div>
+
+  <h1 class="outline">irRemote</h1>
+
+  <h5>Purpose</h5>
+  <p>
+    irRemote replaces a TV remote.
+  </p>
+  <p>
+    This project includes a Bluetooth Low Energy peripheral (nRF52) and the irRemote app.
+  </p>
+  <p>
+    This is a proof-of-concept rather than something to bring to market.
+    It was created as a coding example for LaunchCode.
+  </p>
+
+  <h5>Description</h5>
+  <p>
+    The peripheral (nRF52) learns IR codes from the user's TV remote.
+    The app controls the peripheral, including when to learn and send IR signals.
+  </p>
+
+  <h5>How to Use</h5>
+  <p class="underline">
+    Connect to remote:
+  </p>
+  <p>
+    Go to irRemote page (Home Page). Click 'Find remote.' A display with nearby BLE devices pops up.
+    Select the right peripheral.
+  </p>
+
+  <p class="underline">
+    Teach IR:
+  </p>
+
+  <p>
+    In home page, click the bottom text 'Edit buttons.' Select 'Power.' Aim your TV remote at the peripheral and press the power button on your remote.
+    The power button in the app turns red. In the app, press 'Finish.'
+  </p>
+
+  <p class="underline">
+    Send IR:
+  </p>
+
+  <p>
+    After the above steps, aim peripheral at your TV. In the app, click the power button. The TV should now turn ON/OFF.
+    Repeat the above procedure for volume buttons.
+  </p>
+
 </ion-content>

@@ -1,0 +1,28 @@
+<ion-header no-border>
+  <ion-navbar transparent>
+    <button class="white" (click)='dismiss(this.exit)'>
+      <ion-icon name="md-close"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen class="dark-clear-background">
+
+  <p padding class="white">
+    Scanning for your remote...
+  </p>
+
+  <ion-list padding>
+    <button ion-item *ngFor="let device of bluetooth.devices" (click)="dismiss(device)">
+      <h2>{{ device.name || 'Unnamed' }}</h2>
+      <p>{{ device.id }}</p>
+      <p>RSSI: {{ device.rssi }}</p>
+    </button>
+   </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar padding>
+    <p>{{ bluetooth.statusMessage }}</p>
+  </ion-toolbar>
+</ion-footer>
